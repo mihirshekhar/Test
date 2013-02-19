@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap, from Twitter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="Mihir Shekhar" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 30px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+
+  <body>
+
+    
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">MenuBar</li>
+	            <li id="home"><a href="#">Home</a></li>
+              <li id="dataset"><a href="#" >DataSet</a></li>
+              <li id="curator"><a href="#" >Curator</a></li>
+              <li id="events"><a href="#" >Events</a></li>
+              <li id="episodes"><a href="#" >Episodes</a></li>
+              <li id="analytics"><a href="#" >Analytics</a></li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+
+        <div class="span9">
+          <div class="hero-unit" id="homei" >
+            <h1>Hello, world!</h1>
+            <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.Home</p>
+          </div>
+
+          <div class="hero-unit" id="dataseti" style="display:none" >
+            <h1>Hello, world!</h1>
+            <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.dataset</p>
+          </div>
+
+
+          <div class="hero-unit" id="curatori" style="display:none">
+            <h1>Hello, world!</h1>
+            <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique curator.</p>
+          </div>
+
+          <div class="hero-unit" id="eventsi" style="display:none">
+            <h1>Hello, world!</h1>
+            <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more uniqueeventsp>
+          </div>
+
+
+          <div class="hero-unit" id="episodesi" style="display:none">
+            <h1>Hello, world!</h1>
+            <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.episode</p>
+          </div>
+
+
+          <div class="hero-unit" id="analyticsi" style="display:none">
+            <h1>Hello, world!</h1>
+            <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.analytics</p>
+          </div>
+
+        </div><!--/span-->
+      </div><!--/row-->
+
+
+
+
+      <hr>
+
+      <footer>
+        <p>&copy; IIIT Hyderabad</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> 
+    <script src="js/bootstrap.js"></script>
+    <script>
+     function Home(){
+      $('#homei').show();
+      $('#dataseti').hide();
+      $('#curatori').hide();
+      $('#eventsi').hide();
+      $('#episodesi').hide();
+      $('#analyticsi').hide();
+      $('#home').addClass('active');
+      $('#dataset').removeClass('active');
+      $('#curator').removeClass('active');
+      $('#events').removeClass('active');
+      $('#episodes').removeClass('active');
+      $('#analytics').removeClass('active');
+     }
+
+      function DataSet(){
+      $('#homei').hide();
+      $('#dataseti').show();
+      $('#curatori').hide();
+      $('#eventsi').hide();
+      $('#episodesi').hide();
+      $('#analyticsi').hide();
+      $('#dataset').addClass('active');
+      $('#home').removeClass('active');
+      $('#curator').removeClass('active');
+      $('#events').removeClass('active');
+      $('#episodes').removeClass('active');
+      $('#analytics').removeClass('active');
+     }
+
+     function Curator(){
+      $('#homei').hide();
+      $('#dataseti').hide();
+      $('#curatori').show();
+      $('#eventsi').hide();
+      $('#episodesi').hide();
+      $('#analyticsi').hide();
+      $('#curator').addClass('active');
+      $('#home').removeClass('active');
+      $('#dataset').removeClass('active');
+      $('#events').removeClass('active');
+      $('#episodes').removeClass('active');
+      $('#analytics').removeClass('active');
+  }
+
+     function Events(){
+      $('#homei').hide();
+      $('#dataseti').hide();
+      $('#curatori').hide();
+      $('#eventsi').show();
+      $('#episodesi').hide();
+      $('#analyticsi').hide();
+      $('#events').addClass('active');
+       $('#home').removeClass('active');
+      $('#dataset').removeClass('active');
+      $('#curator').removeClass('active');
+      $('#episodes').removeClass('active');
+      $('#analytics').removeClass('active');
+     }
+   
+
+     function Episodes(){
+      $('#homei').hide();
+      $('#dataseti').hide();
+      $('#curatori').hide();
+      $('#eventsi').hide();
+      $('#episodesi').show();
+      $('#analyticsi').hide();
+      $('#episodes').addClass('active');
+       $('#home').removeClass('active');
+      $('#dataset').removeClass('active');
+      $('#curator').removeClass('active');
+      $('#events').removeClass('active');
+      $('#analytics').removeClass('active');
+     }
+
+      function Analytics(){
+      $('#homei').hide();
+      $('#dataseti').hide();
+      $('#curatori').hide();
+      $('#eventsi').hide();
+      $('#episodesi').hide();
+      $('#analyticsi').show();
+
+      $('#analytics').addClass('active');
+      $('#home').removeClass('active');
+      $('#dataset').removeClass('active');
+      $('#curator').removeClass('active');
+      $('#events').removeClass('active');
+       $('#episodes').removeClass('active');
+     }
+     
+     $(document).ready(function(){
+     Home(); 
+});
+
+     $("#home").click(function(){
+  Home();
+});
+
+ $("#dataset").click(function(){
+  DataSet();
+});
+
+ $("#curator").click(function(){
+  Curator();
+});
+
+$("#events").click(function(){
+  Events();
+});
+    
+    $("#episodes").click(function(){
+  Episodes();
+});
+
+    $("#analytics").click(function(){
+  Analytics();
+});
+    </script>
+   </body>
+</html>
+ 
